@@ -11,10 +11,20 @@ namespace EFC.Models
     public int TruckId { get; set; }
 
     [Required]
-    public int CurrentFuelLevel CurrentFuelLevel { get; set; } // int to represent percentage
+    public int CurrentFuelLevel { get; set; }
 
     [Required]
-    public int CurrentStopId CurrentStopId { get; set; }
+    public int CurrentFuelEventId { get; set; }
+
+    [Required]
+    public int NextFuelEventId { get; set; }
+
+    [Required]
+    public int RegionId { get; set; }
+
+    public virtual FuelEvent CurrentFuelEvent { get; set; }
+
+    public virtual FuelEvent NextFuelEvent { get; set; }
 
   }
 }

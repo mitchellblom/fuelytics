@@ -6,7 +6,7 @@ using EFC.Models;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
-namespace YfinderAPIdotnet2.Data
+namespace EFC.Data
 {
     public static class DbInitializer
     {
@@ -18,6 +18,8 @@ namespace YfinderAPIdotnet2.Data
                 {
                     return;
                 }
+
+                
 
 
             }
