@@ -5,10 +5,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EFC.Models
 {
-  public class Dispatch
+  public class DispatchEvent
   {
     [Key]
-    public int DispatchId { get; set; }
+    public int DispatchEventId { get; set; }
 
     [Required]
     public int TruckTargetId { get; set; }

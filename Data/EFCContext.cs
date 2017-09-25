@@ -12,6 +12,7 @@ namespace EFC.Data
 
         public DbSet<Truck> Truck { get; set; }
         public DbSet<FuelEvent> FuelEvent { get; set; }
+        public DbSet<FuelEvent> DispatchEvent { get; set; }
         public DbSet<Stop> Stop { get; set; }
         public DbSet<Region> Region { get; set; }
 

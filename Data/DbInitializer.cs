@@ -19,7 +19,8 @@ namespace EFC.Data
                     return;
                 }
 
-                //seeding REGIONS
+            //seeding REGIONS
+
                 var regions = new Region []
                 {
                     new Region { 
@@ -51,7 +52,8 @@ namespace EFC.Data
                 }
                 context.SaveChanges();
 
-                //seeding TRUCKS
+            //seeding TRUCKS
+
                 var trucks = new Truck []
                 {
                     new Truck { 
@@ -104,11 +106,293 @@ namespace EFC.Data
                 }
                 context.SaveChanges();
 
-                //seeding FUEL EVENTS
+            //seeding STOPS
+
+                var stops = new Stop []         // six stops per region following the refill stop, so 43 in total over 6 regions
+                {
+                    new Stop {
+                        RegionId = 0,
+                        StopLabel = "Refill"    // stop 0 is a refill at the refill station in region 0
+                    },
+                    new Stop {
+                        RegionId = 0,
+                        StopLabel = "Alpha"     // random names here from phonetic alphabet
+                    },
+                    new Stop {
+                        RegionId = 0,
+                        StopLabel = "Bravo"
+                    },
+                    new Stop {
+                        RegionId = 0,
+                        StopLabel = "Charlie"
+                    },
+                    new Stop {
+                        RegionId = 0,
+                        StopLabel = "Delta"
+                    },
+                    new Stop {
+                        RegionId = 0,
+                        StopLabel = "Echo"
+                    },
+                    new Stop {
+                        RegionId = 0,
+                        StopLabel = "Foxtrot"
+                    },
+                    new Stop {
+                        RegionId = 1,
+                        StopLabel = "Golf"
+                    },
+                    new Stop {
+                        RegionId = 1,
+                        StopLabel = "Hotel"
+                    },
+                    new Stop {
+                        RegionId = 1,
+                        StopLabel = "India"
+                    },
+                    new Stop {
+                        RegionId = 1,
+                        StopLabel = "Juliet"
+                    },
+                    new Stop {
+                        RegionId = 1,
+                        StopLabel = "Kilo"
+                    },
+                    new Stop {
+                        RegionId = 1,
+                        StopLabel = "Lima"
+                    },
+                    new Stop {
+                        RegionId = 2,
+                        StopLabel = "Mike"
+                    },
+                    new Stop {
+                        RegionId = 2,
+                        StopLabel = "November"
+                    },
+                    new Stop {
+                        RegionId = 2,
+                        StopLabel = "Oscar"
+                    },
+                    new Stop {
+                        RegionId = 2,
+                        StopLabel = "Papa"
+                    },
+                    new Stop {
+                        RegionId = 2,
+                        StopLabel = "Quebec"
+                    },
+                    new Stop {
+                        RegionId = 2,
+                        StopLabel = "Romeo"
+                    },
+                    new Stop {
+                        RegionId = 3,
+                        StopLabel = "Sierra"
+                    },
+                    new Stop {
+                        RegionId = 3,
+                        StopLabel = "Tango"
+                    },
+                    new Stop {
+                        RegionId = 3,
+                        StopLabel = "Uniform"
+                    },
+                    new Stop {
+                        RegionId = 3,
+                        StopLabel = "Victor"
+                    },
+                    new Stop {
+                        RegionId = 3,
+                        StopLabel = "Whiskey"
+                    },
+                    new Stop {
+                        RegionId = 3,
+                        StopLabel = "Xray"
+                    },
+                    new Stop {
+                        RegionId = 4,
+                        StopLabel = "Yankee"
+                    },
+                    new Stop {
+                        RegionId = 4,
+                        StopLabel = "Zulu"
+                    },
+                    new Stop {
+                        RegionId = 4,
+                        StopLabel = "Alexander"     // random names from here based on most common boy names from 2012
+                    },
+                    new Stop {
+                        RegionId = 4,
+                        StopLabel = "Benjamin"
+                    },
+                    new Stop {
+                        RegionId = 4,
+                        StopLabel = "Christopher"
+                    },
+                    new Stop {
+                        RegionId = 4,
+                        StopLabel = "Daniel"
+                    },
+                    new Stop {
+                        RegionId = 5,
+                        StopLabel = "Ethan"
+                    },
+                    new Stop {
+                        RegionId = 5,
+                        StopLabel = "Fernando"
+                    },
+                    new Stop {
+                        RegionId = 5,
+                        StopLabel = "Gabriel"
+                    },
+                    new Stop {
+                        RegionId = 5,
+                        StopLabel = "Henry"
+                    },
+                    new Stop {
+                        RegionId = 5,
+                        StopLabel = "Isaac"
+                    },
+                    new Stop {
+                        RegionId = 5,
+                        StopLabel = "Jacob"
+                    },
+                    new Stop {
+                        RegionId = 6,
+                        StopLabel = "Kevin"
+                    },
+                    new Stop {
+                        RegionId = 6,
+                        StopLabel = "Liam"
+                    },
+                    new Stop {
+                        RegionId = 6,
+                        StopLabel = "Mason"
+                    },
+                    new Stop {
+                        RegionId = 6,
+                        StopLabel = "Noah"
+                    },
+                    new Stop {
+                        RegionId = 6,
+                        StopLabel = "Owen"
+                    },
+                    new Stop {
+                        RegionId = 6,
+                        StopLabel = "Parker"
+                    }
+                };
+
+                foreach (Stop i in stops)
+                {
+                    context.Stop.Add(i);
+                }
+                context.SaveChanges();
+
+            //seeding FUEL EVENTS
+
                 var fuelEvents = new FuelEvent []
                 {
                     new FuelEvent {
-                        FuelPercentageChange = 0 // generate random number between 5 and 17 to determine fuel depletion amount of truck
+                        StopId = 0,
+                        FuelPercentageChange = 15 // difference between current truck fuel level and 100%, in this case arbitrary
+                    },
+                    new FuelEvent {
+                        StopId = 1,
+                        FuelPercentageChange = -5 // generate random number between -5 and -17 to determine fuel depletion amount of truck
+                    },
+                    new FuelEvent {
+                        StopId = 2,
+                        FuelPercentageChange = -6
+                    },
+                    new FuelEvent {
+                        StopId = 3,
+                        FuelPercentageChange = -7
+                    },
+                    new FuelEvent {
+                        StopId = 4,
+                        FuelPercentageChange = -8
+                    },
+                    new FuelEvent {
+                        StopId = 5,
+                        FuelPercentageChange = -9
+                    },
+                    new FuelEvent {
+                        StopId = 6,
+                        FuelPercentageChange = -10
+                    },
+                    new FuelEvent {
+                        StopId = 7,
+                        FuelPercentageChange = -11
+                    },
+                    new FuelEvent {
+                        StopId = 8,
+                        FuelPercentageChange = -12
+                    },
+                    new FuelEvent {
+                        StopId = 9,
+                        FuelPercentageChange = -13
+                    },
+                    new FuelEvent {
+                        StopId = 10,
+                        FuelPercentageChange = -14
+                    },
+                    new FuelEvent {
+                        StopId = 11,
+                        FuelPercentageChange = -15
+                    },
+                    new FuelEvent {
+                        StopId = 12,
+                        FuelPercentageChange = -16
+                    },
+                    new FuelEvent {
+                        StopId = 13,
+                        FuelPercentageChange = -17
+                    },
+                    new FuelEvent {
+                        StopId = 14,
+                        FuelPercentageChange = -5
+                    },
+                    new FuelEvent {
+                        StopId = 15,
+                        FuelPercentageChange = -6
+                    },
+                    new FuelEvent {
+                        StopId = 16,
+                        FuelPercentageChange = -7
+                    },
+                    new FuelEvent {
+                        StopId = 17,
+                        FuelPercentageChange = -8
+                    },
+                    new FuelEvent {
+                        StopId = 18,
+                        FuelPercentageChange = -9
+                    },
+                    new FuelEvent {
+                        StopId = 19,
+                        FuelPercentageChange = -10
+                    },
+                    new FuelEvent {
+                        StopId = 20,
+                        FuelPercentageChange = -11
+                    },
+                    new FuelEvent {
+                        StopId = 21,
+                        FuelPercentageChange = -12
+                    },
+                    new FuelEvent {
+                        StopId = 22,
+                        FuelPercentageChange = -13
+                    },
+                    new FuelEvent {
+                        StopId = 23,
+                        FuelPercentageChange = -14
+                    },
+                    new FuelEvent {
+                        StopId = 24,
+                        FuelPercentageChange = -15
                     }
                 };
 
@@ -118,23 +402,18 @@ namespace EFC.Data
                 }
                 context.SaveChanges();
 
-                //seeding STOPS
-                var stops = new Stop []
-                {
-                    new Stop {
-                        RegionId = 0,
-                        StopLabel = "Refill"
-                    },
-                    new Stop {
-                        RegionId = 0
-                        StopLabel = 
-                    }
+            //seeding DISPATCH EVENTS
 
+                var dispatchEvents = new DispatchEvent []
+                {
+                    new DispatchEvent {
+                        // add event attributes here
+                    }
                 };
 
-                foreach (Stop i in stops)
+                foreach (DispatchEvent i in dispatchEvents)
                 {
-                    context.Stop.Add(i);
+                    context.DispatchEvent.Add(i);
                 }
                 context.SaveChanges();
 

@@ -13,5 +13,10 @@ namespace EFC.Models
     [Required]
     public int FuelPercentageChange { get; set; }
 
+    [Required]
+    public int StopId { get; set; }
+
+    public virtual Stop Stop { get; set; }
+
   }
 }
