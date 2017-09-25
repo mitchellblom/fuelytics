@@ -19,7 +19,6 @@ namespace EFC.Models
     [Required]
     public int StopFuelLevel { get; set; }
 
-    public virtual FuelEvent FuelEvent { get; set; }
     public virtual Region Region { get; set; }
 
   }
