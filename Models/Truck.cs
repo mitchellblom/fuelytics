@@ -14,17 +14,17 @@ namespace EFC.Models
     public int CurrentFuelLevel { get; set; }
 
     [Required]
-    public int CurrentFuelEventId { get; set; }
+    public int CurrentStopId { get; set; }
 
     [Required]
-    public int NextFuelEventId { get; set; }
+    public int NextStopId { get; set; }
 
     [Required]
     public int RegionId { get; set; }
 
-    public virtual FuelEvent CurrentFuelEvent { get; set; }
+    public virtual Stop CurrentStop { get; set; }
 
-    public virtual FuelEvent NextFuelEvent { get; set; }
+    public virtual Stop NextStop { get; set; }
 
   }
 }

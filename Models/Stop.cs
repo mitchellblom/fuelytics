@@ -17,11 +17,10 @@ namespace EFC.Models
     public int RegionId { get; set; }
 
     [Required]
-    public int StopLabel { get; set; }
+    public string StopLabel { get; set; }
 
     public virtual FuelEvent FuelEvent { get; set; }
     public virtual Region Region { get; set; }
-
 
   }
 }
