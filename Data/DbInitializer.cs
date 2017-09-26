@@ -242,12 +242,72 @@ namespace EFC.Data
                 {
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Alpha").StopId,
-                        FuelPercentageChange = 17, // difference between current truck fuel level and 100%, in this case arbitrary
+                        FuelPercentageChange = -17, // difference between current truck fuel level and 100%, in this case arbitrary
+                        FuelTimeStamp = new DateTime(2017, 9, 28, 2,3,0)
+                    },
+                    new FuelEvent {
+                        StopId = stops.Single(n => n.StopLabel == "Alpha").StopId,
+                        FuelPercentageChange = -16, // generate random number between -5 and -17 to determine fuel depletion amount of truck
+                        FuelTimeStamp = new DateTime(2017, 9, 18, 2,3,0)
+                    },
+                    new FuelEvent {
+                        StopId = stops.Single(n => n.StopLabel == "Alpha").StopId,
+                        FuelPercentageChange = -15,
+                        FuelTimeStamp = new DateTime(2017, 9, 8, 2,3,0)
+                    },
+                    new FuelEvent {
+                        StopId = stops.Single(n => n.StopLabel == "Bravo").StopId,
+                        FuelPercentageChange = -10,
+                        FuelTimeStamp = new DateTime(2017, 9, 8, 2,3,0)
+                    },
+                    new FuelEvent {
+                        StopId = stops.Single(n => n.StopLabel == "Bravo").StopId,
+                        FuelPercentageChange = -9,
+                        FuelTimeStamp = new DateTime(2017, 9, 18, 2,3,0)
+                    },
+                    new FuelEvent {
+                        StopId = stops.Single(n => n.StopLabel == "Bravo").StopId,
+                        FuelPercentageChange = -8,
+                        FuelTimeStamp = new DateTime(2017, 9, 28, 2,3,0)
+                    },
+                    new FuelEvent {
+                        StopId = stops.Single(n => n.StopLabel == "Charlie").StopId,
+                        FuelPercentageChange = -6,
+                        FuelTimeStamp = new DateTime(2017, 9, 8, 2,3,0)
+                    },
+                    new FuelEvent {
+                        StopId = stops.Single(n => n.StopLabel == "Charlie").StopId,
+                        FuelPercentageChange = -7,
+                        FuelTimeStamp = new DateTime(2017, 9, 18, 2,3,0)
+                    },
+                    new FuelEvent {
+                        StopId = stops.Single(n => n.StopLabel == "Charlie").StopId,
+                        FuelPercentageChange = -8,
+                        FuelTimeStamp = new DateTime(2017, 9, 28, 2,3,0)
+                    },
+                    new FuelEvent {
+                        StopId = stops.Single(n => n.StopLabel == "Delta").StopId,
+                        FuelPercentageChange = -7,
+                        FuelTimeStamp = new DateTime(2017, 9, 8, 2,3,0)
+                    },
+                    new FuelEvent {
+                        StopId = stops.Single(n => n.StopLabel == "Delta").StopId,
+                        FuelPercentageChange = -12,
+                        FuelTimeStamp = new DateTime(2017, 9, 18, 2,3,0)
+                    },
+                    new FuelEvent {
+                        StopId = stops.Single(n => n.StopLabel == "Delta").StopId,
+                        FuelPercentageChange = -6,
+                        FuelTimeStamp = new DateTime(2017, 9, 28, 2,3,0)
+                    },
+                    new FuelEvent {
+                        StopId = stops.Single(n => n.StopLabel == "Alpha").StopId,
+                        FuelPercentageChange = -17, // difference between current truck fuel level and 100%, in this case arbitrary
                         FuelTimeStamp = new DateTime(2017, 8, 28, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Bravo").StopId,
-                        FuelPercentageChange = -5, // generate random number between -5 and -17 to determine fuel depletion amount of truck
+                        FuelPercentageChange = -5,
                         FuelTimeStamp = new DateTime(2017, 8, 18, 2,3,0)
                     },
                     new FuelEvent {
