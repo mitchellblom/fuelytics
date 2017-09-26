@@ -1,9 +1,5 @@
 # Fuelytics
-## by Mitchell Blom
-
-<hr>
-
-## EFC Take-Home Assessment
+### EFC Take-Home Assessment by Mitchell Blom
 
 <hr>
 
@@ -16,12 +12,8 @@
  - Execute `dotnet ef database update`
  - Execute `dotnet run` which will create and populate db file, queryable by a DB browser
 
-<hr>
-
 ## System configuration needed
  - Install your OS's version of DB Browser for SQLite from http://sqlitebrowser.org/
-
-<hr>
 
 ## Link to view corresponding system presentation
 https://docs.google.com/presentation/d/1souBZYAEHxWagr9cbc7g8hDCKBTAt0e-IiVilBAonyY/edit?usp=sharing
@@ -31,5 +23,5 @@ https://docs.google.com/presentation/d/1souBZYAEHxWagr9cbc7g8hDCKBTAt0e-IiVilBAo
 ## Visuals
 
 ![ERD](https://raw.githubusercontent.com/mitchellblom/fuelytics/master/images/ERD.png)
-![Regions](https://raw.githubusercontent.com/mitchellblom/fuelytics/master/images/Regions.png)
 ![System Outline](https://raw.githubusercontent.com/mitchellblom/fuelytics/master/images/SystemOutline.png)
+![Regions](https://raw.githubusercontent.com/mitchellblom/fuelytics/master/images/Regions.png)
