@@ -17,6 +17,7 @@ namespace EFC.Models
     public int StopId { get; set; }
 
     [Required]
+    [DataType(DataType.Date)]
     public DateTime FuelTimeStamp { get; set; }
 
     public virtual Stop Stop { get; set; }

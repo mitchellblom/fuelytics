@@ -17,6 +17,7 @@ namespace EFC.Models
     public int SetNextStopId { get; set; }
 
     [Required]
+    [DataType(DataType.Date)]
     public DateTime DispatchTimeStamp { get; set; }
 
     public virtual Truck TruckTarget { get; set; }
