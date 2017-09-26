@@ -242,103 +242,128 @@ namespace EFC.Data
                 {
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Alpha").StopId,
-                        FuelPercentageChange = 17 // difference between current truck fuel level and 100%, in this case arbitrary
+                        FuelPercentageChange = 17, // difference between current truck fuel level and 100%, in this case arbitrary
+                        FuelTimeStamp = new DateTime(2017, 8, 28, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Bravo").StopId,
-                        FuelPercentageChange = -5 // generate random number between -5 and -17 to determine fuel depletion amount of truck
+                        FuelPercentageChange = -5, // generate random number between -5 and -17 to determine fuel depletion amount of truck
+                        FuelTimeStamp = new DateTime(2017, 8, 18, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Charlie").StopId,
-                        FuelPercentageChange = -6
+                        FuelPercentageChange = -6,
+                        FuelTimeStamp = new DateTime(2017, 8, 8, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Delta").StopId,
-                        FuelPercentageChange = -7
+                        FuelPercentageChange = -7,
+                        FuelTimeStamp = new DateTime(2017, 7, 28, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Echo").StopId,
-                        FuelPercentageChange = -8
+                        FuelPercentageChange = -8,
+                        FuelTimeStamp = new DateTime(2017, 7, 18, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Foxtrot").StopId,
-                        FuelPercentageChange = -9
+                        FuelPercentageChange = -9,
+                        FuelTimeStamp = new DateTime(2017, 7, 8, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Golf").StopId,
-                        FuelPercentageChange = -10
+                        FuelPercentageChange = -10,
+                        FuelTimeStamp = new DateTime(2017, 6, 28, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Hotel").StopId,
-                        FuelPercentageChange = -11
+                        FuelPercentageChange = -11,
+                        FuelTimeStamp = new DateTime(2017, 6, 18, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "India").StopId,
-                        FuelPercentageChange = -12
+                        FuelPercentageChange = -12,
+                        FuelTimeStamp = new DateTime(2017, 6, 8, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Juliet").StopId,
-                        FuelPercentageChange = -13
+                        FuelPercentageChange = -13,
+                        FuelTimeStamp = new DateTime(2017, 5, 28, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Kilo").StopId,
-                        FuelPercentageChange = -14
+                        FuelPercentageChange = -14,
+                        FuelTimeStamp = new DateTime(2017, 5, 18, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Lima").StopId,
-                        FuelPercentageChange = -15
+                        FuelPercentageChange = -15,
+                        FuelTimeStamp = new DateTime(2017, 5, 8, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Mike").StopId,
-                        FuelPercentageChange = -16
+                        FuelPercentageChange = -16,
+                        FuelTimeStamp = new DateTime(2017, 4, 28, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "November").StopId,
-                        FuelPercentageChange = -17
+                        FuelPercentageChange = -17,
+                        FuelTimeStamp = new DateTime(2017, 4, 18, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Oscar").StopId,
-                        FuelPercentageChange = -5
+                        FuelPercentageChange = -5,
+                        FuelTimeStamp = new DateTime(2017, 4, 8, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Papa").StopId,
                         FuelPercentageChange = -6
+                        FuelTimeStamp = new DateTime(2017, 3, 28, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Quebec").StopId,
-                        FuelPercentageChange = -7
+                        FuelPercentageChange = -7,
+                        FuelTimeStamp = new DateTime(2017, 3, 18, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Romeo").StopId,
-                        FuelPercentageChange = -8
+                        FuelPercentageChange = -8,
+                        FuelTimeStamp = new DateTime(2017, 3, 8, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Sierra").StopId,
-                        FuelPercentageChange = -9
+                        FuelPercentageChange = -9,
+                        FuelTimeStamp = new DateTime(2017, 2, 28, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Tango").StopId,
-                        FuelPercentageChange = -10
+                        FuelPercentageChange = -10,
+                        FuelTimeStamp = new DateTime(2017, 2, 18, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Uniform").StopId,
-                        FuelPercentageChange = -11
+                        FuelPercentageChange = -11,
+                        FuelTimeStamp = new DateTime(2017, 2, 8, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Victor").StopId,
-                        FuelPercentageChange = -12
+                        FuelPercentageChange = -12,
+                        FuelTimeStamp = new DateTime(2017, 1, 28, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Whiskey").StopId,
-                        FuelPercentageChange = -13
+                        FuelPercentageChange = -13,
+                        FuelTimeStamp = new DateTime(2017, 1, 18, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Xray").StopId,
-                        FuelPercentageChange = -14
+                        FuelPercentageChange = -14,
+                        FuelTimeStamp = new DateTime(2017, 1, 8, 2,3,0)
                     },
                     new FuelEvent {
                         StopId = stops.Single(n => n.StopLabel == "Yankee").StopId,
-                        FuelPercentageChange = -15
+                        FuelPercentageChange = -15,
+                        FuelTimeStamp = new DateTime(2016, 12, 28, 2,3,0)
                     }
                 };
 
@@ -408,195 +433,243 @@ namespace EFC.Data
                 {
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 100).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId,
+                        DispatchTimeStamp = new DateTime(2017, 8, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 100).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Alpha").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Alpha").StopId,
+                        new DateTime(2017, 8, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 100).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Bravo").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Bravo").StopId,
+                        new DateTime(2017, 8, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 100).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Charlie").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Charlie").StopId,
+                        new DateTime(2017, 7, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 100).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Delta").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Delta").StopId,
+                        new DateTime(2017, 7, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 100).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Echo").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Echo").StopId,
+                        new DateTime(2017, 7, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 99).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId,
+                        new DateTime(2017, 6, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 99).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Foxtrot").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Foxtrot").StopId,
+                        new DateTime(2017, 6, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 99).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Golf").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Golf").StopId,
+                        new DateTime(2017, 6, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 99).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Hotel").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Hotel").StopId,
+                        new DateTime(2017, 5, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 99).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "India").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "India").StopId,
+                        new DateTime(2017, 5, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 99).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Juliet").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Juliet").StopId,
+                        new DateTime(2017, 5, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 99).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Kilo").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Kilo").StopId,
+                        new DateTime(2017, 4, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 98).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId,
+                        new DateTime(2017, 4, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 98).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Lima").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Lima").StopId,
+                        new DateTime(2017, 4, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 98).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Mike").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Mike").StopId,
+                        new DateTime(2017, 3, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 98).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "November").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "November").StopId,
+                        new DateTime(2017, 3, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 98).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Oscar").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Oscar").StopId,
+                        new DateTime(2017, 3, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 98).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Papa").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Papa").StopId,
+                        new DateTime(2017, 3, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 98).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Quebec").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Quebec").StopId,
+                        new DateTime(2017, 3, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 97).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId,
+                        new DateTime(2017, 2, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 97).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Romeo").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Romeo").StopId,
+                        new DateTime(2017, 2, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 97).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Sierra").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Sierra").StopId,
+                        new DateTime(2017, 2, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 97).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Tango").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Tango").StopId,
+                        new DateTime(2017, 1, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 97).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Uniform").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Uniform").StopId,
+                        new DateTime(2017, 1, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 97).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Victor").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Victor").StopId,
+                        new DateTime(2017, 1, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 97).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Whiskey").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Whiskey").StopId,
+                        new DateTime(2016, 12, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 96).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId,
+                        new DateTime(2016, 12, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 96).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Xray").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Xray").StopId,
+                        new DateTime(2016, 12, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 96).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Yankee").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Yankee").StopId,
+                        new DateTime(2016, 11, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 96).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Zulu").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Zulu").StopId,
+                        new DateTime(2016, 11, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 96).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Alexander").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Alexander").StopId,
+                        new DateTime(2016, 11, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 96).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Benjamin").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Benjamin").StopId,
+                        new DateTime(2016, 10, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 96).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Christopher").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Christopher").StopId,
+                        new DateTime(2016, 10, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 95).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId,
+                        new DateTime(2016, 10, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 95).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Daniel").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Daniel").StopId,
+                        new DateTime(2016, 9, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 95).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Ethan").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Ethan").StopId,
+                        new DateTime(2016, 9, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 95).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Fernando").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Fernando").StopId,
+                        new DateTime(2016, 9, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 95).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Gabriel").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Gabriel").StopId,
+                        new DateTime(2016, 8, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 95).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Isaac").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Isaac").StopId,
+                        new DateTime(2016, 8, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 95).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Jacob").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Jacob").StopId,
+                        new DateTime(2016, 8, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 94).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Refill").StopId,
+                        new DateTime(2016, 7, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 94).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Kevin").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Kevin").StopId,
+                        new DateTime(2016, 7, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 94).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Liam").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Liam").StopId,
+                        new DateTime(2016, 7, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 94).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Mason").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Mason").StopId,
+                        new DateTime(2016, 6, 28, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 94).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Noah").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Noah").StopId,
+                        new DateTime(2016, 6, 18, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 94).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Owen").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Owen").StopId,
+                        new DateTime(2016, 6, 8, 1,3,0)
                     },
                     new DispatchEvent {
                         TruckTargetId = trucks.Single(n => n.CurrentFuelLevel == 94).TruckId,
-                        SetNextStopId = stops.Single(n => n.StopLabel == "Parker").StopId
+                        SetNextStopId = stops.Single(n => n.StopLabel == "Parker").StopId,
+                        new DateTime(2016, 5, 28, 1,3,0)
                     }
                 };
 

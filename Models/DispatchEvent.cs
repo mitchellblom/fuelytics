@@ -16,6 +16,9 @@ namespace EFC.Models
     [Required]
     public int SetNextStopId { get; set; }
 
+    [Required]
+    public DateTime DispatchTimeStamp { get; set; }
+
     public virtual Truck TruckTarget { get; set; }
 
     public virtual Stop StopToSet { get; set; }
